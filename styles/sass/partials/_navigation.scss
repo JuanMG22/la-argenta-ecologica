@@ -44,7 +44,7 @@
             z-index: 999;
             display: flex;
             top: 0;
-            transition: all ease .3s;
+            transition: all ease .2s;
 
             @include tablet {
                 flex-direction: column;

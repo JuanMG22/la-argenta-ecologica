@@ -2,13 +2,68 @@
 @import "./variables";
 @import "./responsive";
 
-* {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',
-        sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
     scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+p,
+body,
+header,
+section,
+footer,
+.container,
+.container-fluid,
+.row,
+.col {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-fluid {
+    width: 100%;
 }
 
 body {
@@ -17,6 +72,11 @@ body {
     color: $negro-texto;
     text-rendering: optimizeLegibility;
     font-size: 16px;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.5;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     @include laptop-l {
         font-size: 14px;
@@ -36,27 +96,6 @@ body {
     }
 }
 
-h1 {
-    display: none;
-}
-
-h2 {
-    font-size: 350%;
-    font-weight: 600;
-    color: $blanco;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    color: $blanco-texto;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-}
-
 li {
     list-style: none;
 }
@@ -64,37 +103,4 @@ li {
 a {
     text-decoration: none;
     color: $blanco;
-}
-
-// Buttons
-
-.btn {
-    font-size: 150%;
-    padding: 0.625rem 1.875rem;
-    margin: 0rem 0rem;
-    border-radius: $borde-redondeado;
-    animation: bounceIn;
-    animation-duration: 2s;
-    animation-delay: 1s;
-}
-
-.btn-solutions {
-    font-size: 120%;
-    width: 100%;
-    text-align: center;
-    padding: 0.625rem 3.75rem;
-    margin: 1.25rem 1.875rem;
-    letter-spacing: 1px;
-}
-
-.btn-full {
-    border: 2px solid $blanco;
-    color: $blanco;
-    transition: ease all .3s;
-
-    &:hover,
-    &:active {
-        background-color: $blanco;
-        color: $negro;
-    }
 }
