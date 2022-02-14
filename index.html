@@ -5,10 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Argentina Ecológica</title>
-    <script src="styles/main.css"></script>
+    <link rel="stylesheet" href="./styles/css/main.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
     
+    <!-- Header y Navbar -->
+    <header class="header">
+        <nav class="header__navegacion">
+            <a href="#">
+                <button id="btn-logo">
+                    <img loading="lazy" class="header__navegacion--logoimg" src="./img/logo.png" alt="argenta ecologica logo">
+                </button>
+            </a>
+            <button id="btn-menu" class="header__navegacion--btn-menu">
+                <span class="header__navegacion--linea-1 header__navegacion--lineas"></span>
+                <span class="header__navegacion--linea-2 header__navegacion--lineas"></span>
+                <span class="header__navegacion--linea-3 header__navegacion--lineas"></span>
+            </button>
+            <ul class="header__navegacion--menu">
+                <button id="btn-link-1">
+                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu"
+                            href="#">Link 1</a></li>
+                </button>
+                <button id="btn-link-2">
+                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu"
+                            href="#">Link 2</a></li>
+                </button>
+                <button id="btn-link-3">
+                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu"
+                            href="#">Link 3</a></li>
+                </button>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="./scripts/menu.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>

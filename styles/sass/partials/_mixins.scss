@@ -1,0 +1,26 @@
+@mixin borde-h2 {
+    border-bottom: $borde-negro;
+    padding-bottom: $padding-titulo;
+}
+
+@mixin botones-menu {
+    background: none;
+    color: $negro-texto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    @include tablet {
+        color: $blanco;
+    }
+
+    &:active,
+    &:visited,
+    &:hover {
+        color: $negro-texto;
+
+        @include tablet {
+            color: $negro-texto;
+        }
+    }
+}

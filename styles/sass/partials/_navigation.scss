@@ -1,0 +1,181 @@
+@import "./variables";
+@import "./responsive";
+
+.header {
+    background: $blanco;
+    box-shadow: $sombra-negra;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    z-index: 9999;
+    position: fixed;
+
+    &__navegacion {
+        width: 97vw;
+        background: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.4rem 0rem;
+
+
+        @include tablet {
+            padding: 0.4rem 0.6rem 0rem 1.2rem;
+            width: 100vw;
+        }
+
+        &--logoimg {
+            height: 4rem;
+
+            @include laptop {
+                height: 2.3rem;
+            }
+
+            @include tablet {
+                display: block;
+                height: 3.2rem;
+                margin: 0.6rem 0.3rem 0.3rem 0.3rem;
+            }
+        }
+
+
+        &--menu {
+            z-index: 999;
+            display: flex;
+            top: 0;
+            transition: all ease .3s;
+
+            @include tablet {
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+                overflow: hidden;
+                position: fixed;
+                font-size: 160%;
+                background: linear-gradient(rgba(46, 51, 209, 1), rgba(46, 51, 209, 0.876));
+                background-size: cover;
+                background-position: center;
+                top: 4.7rem;
+                left: 0;
+                width: 100%;
+                height: 0;
+            }
+
+        }
+
+        &--menu-mobile {
+            @include tablet {
+                height: calc(100vh - 4.15rem);
+            }
+        }
+
+        // Menu Hamburguesa
+
+        #btn-menu {
+            display: none;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-right: 2.2rem;
+            height: 1.875rem;
+            width: 30px;
+            position: relative;
+            transition: all ease .3s;
+
+            @include tablet {
+                display: block;
+            }
+        }
+
+
+        #btn-logo {
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        #btn-link-1 {
+            @include botones-menu;
+        }
+
+        #btn-link-2 {
+            @include botones-menu;
+        }
+
+        #btn-link-3 {
+            @include botones-menu;
+        }
+
+        &--lineas {
+            position: absolute;
+            content: "";
+            background: $negro-texto;
+            width: 30px;
+            height: 3px;
+            border-radius: $borde-redondeado;
+            transition: all ease .3s;
+        }
+
+        &--linea-1 {
+            top: 0;
+        }
+
+        &--linea-2 {
+            top: 10px;
+        }
+
+        &--linea-3 {
+            top: 20px;
+        }
+
+        .l1-active {
+            transform: rotate(-140deg);
+            top: 10px;
+        }
+
+        .l2-active {
+            opacity: 0;
+        }
+
+        .l3-active {
+            transform: rotate(140deg);
+            top: 10px;
+        }
+
+
+        // Sub Menu
+
+        &--link-menu {
+            display: block;
+            padding: 0.4rem 0.8rem;
+            color: $negro-texto;
+            font-size: 140%;
+            letter-spacing: 1px;
+            transition: ease all .3s;
+
+            @include laptop {
+                padding: 0.4rem 0.4rem;
+            }
+
+            @include tablet {
+                margin: 0.625rem 0rem;
+                background: none;
+                color: $blanco;
+            }
+
+            &:hover {
+
+                @include tablet {
+                    border: none;
+                    background: $blanco;
+                    color: $negro-texto;
+                    box-shadow: 1px 1px 5px 0 #000;
+                }
+            }
+        }
+    }
+
+}
