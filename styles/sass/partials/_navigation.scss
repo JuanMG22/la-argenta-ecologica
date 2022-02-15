@@ -3,7 +3,7 @@
 
 .header {
     background: $blanco;
-    box-shadow: $sombra-negra;
+    box-shadow: $sombra-amarilla;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -27,7 +27,6 @@
 
         &--logoimg {
             height: 4rem;
-
             @include laptop {
                 height: 2.3rem;
             }
@@ -45,10 +44,12 @@
             display: flex;
             top: 0;
             transition: all ease .2s;
+            margin-right: 1rem;
 
             @include tablet {
                 flex-direction: column;
-                justify-content: flex-start;
+                justify-content: center;
+                align-items: center;
                 text-align: center;
                 overflow: hidden;
                 position: fixed;
@@ -109,6 +110,10 @@
             @include botones-menu;
         }
 
+        #btn-link-4 {
+            @include botones-menu;
+        }
+
         &--lineas {
             position: absolute;
             content: "";
@@ -117,6 +122,7 @@
             height: 3px;
             border-radius: $borde-redondeado;
             transition: all ease .3s;
+            box-shadow: 1px 1px 0 darken($amarillo, 20%);
         }
 
         &--linea-1 {
@@ -155,6 +161,8 @@
             font-size: 140%;
             letter-spacing: 1px;
             transition: ease all .3s;
+            border-radius: .2em;
+            box-shadow: 1px 1px 0 0 darken($amarillo, 20%), 4px 4px 0 0 $amarillo;
 
             @include laptop {
                 padding: 0.4rem 0.4rem;
@@ -164,15 +172,19 @@
                 margin: 0.625rem 0rem;
                 background: none;
                 color: $blanco;
+                box-shadow: 1px 1px darken($azul, 10%), 5px 5px 0 0 $azul;
+                
             }
 
             &:hover {
+                transform: translate(2px, 2px);
+                box-shadow: 1px 1px 0 0 darken($amarillo, 20%), 3px 3px 0 0 $amarillo;
 
                 @include tablet {
-                    border: none;
-                    background: $blanco;
-                    color: $negro-texto;
-                    box-shadow: 1px 1px 5px 0 #000;
+                    /* transform: none; */
+                    background: lighten($azul, 5%);
+
+                    box-shadow: 1px 1px darken($azul, 10%), 3px 3px 0 0 $azul;
                 }
             }
         }
