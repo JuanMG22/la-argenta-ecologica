@@ -7,12 +7,12 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     z-index: 9999;
     position: fixed;
 
     &__navegacion {
-        width: 97vw;
+        width: 100%;
         background: none;
         display: flex;
         justify-content: space-between;

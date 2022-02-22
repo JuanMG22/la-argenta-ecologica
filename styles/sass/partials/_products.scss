@@ -1,0 +1,103 @@
+.products{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: 1400px;
+    overflow: hidden;
+    margin-top: 6rem; /* temporal, para dejar lugar al nav */
+
+    &__info{
+        width: 50%;
+        border-right: 4px dashed darkslategray;
+
+        &__container{
+            width: 100%;
+            height: 100%;
+            max-width: 70ch;
+            margin: auto;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: start;
+
+            h2{
+                font-size: 3.4rem;
+                font-weight: 700;
+                color: rgb(30, 30, 30)
+            }
+    
+            p{
+                font-size: 1.3rem;
+                font-weight: 400;
+                color: darkslategrey;
+            }
+
+            button{
+                border: none;
+                background: none;
+                outline: none;
+                margin-top: 2rem;
+                font-size: 2rem;
+                padding: .8rem;
+                border: 2px solid darkslategrey;
+                border-radius: .4em;
+                font-weight: 700;
+                color: rgb(30, 30, 30);
+
+                &:hover{
+                    color: darkslategrey;
+                }
+            }
+        } 
+    }
+
+    &__products{
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 70ch;
+        margin: auto;
+        gap: .4rem;
+
+        &__producto{
+            aspect-ratio: 3 / 5;
+            width: 20%;
+            min-width: 200px;
+            max-width: 300px;
+            border: 2px solid darkslategrey;
+            border-radius: .2em;
+
+            h3{
+                padding: .4rem;
+                color: rgb(30, 30, 30);
+                font-weight: 700;
+            }
+
+            p{
+                padding: .4rem;
+                color: darkslategrey;
+                font-weight: 400;
+            }
+            
+            img{
+                width: 100%;
+                object-fit: cover;
+                transition: 400ms transform;
+            }
+            
+            &:hover img{
+                transform: scale(1.4);
+            }
+
+            &__imgContainer{
+                width: 100%;
+                aspect-ratio: 1;
+                overflow: hidden;
+            }
+        }
+    }
+}
