@@ -46,6 +46,7 @@
                 border-radius: .4em;
                 font-weight: 700;
                 color: rgb(30, 30, 30);
+                background: salmon;
 
                 &:hover{
                     color: darkslategrey;
@@ -60,17 +61,19 @@
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        max-width: 70ch;
         margin: auto;
-        gap: .4rem;
+        column-gap: 8rem;
+        row-gap: 4rem;
 
         &__producto{
             aspect-ratio: 3 / 5;
             width: 20%;
-            min-width: 200px;
+            min-width: 220px;
             max-width: 300px;
             border: 2px solid darkslategrey;
-            border-radius: .2em;
+            border-radius: .3em;
+            background: salmon;
+            cursor: pointer;
 
             h3{
                 padding: .4rem;
