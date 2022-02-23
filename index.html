@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Argentina Ecológica</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/css/main.css">
 </head>
+
 <body>
     <!-- Preloader -->
-    <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
-    
+    <div class="lds-ring loader" id="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
     <!-- Header y Navbar -->
     <header class="header">
         <nav class="header__navegacion">
             <a href="#">
                 <button id="btn-logo">
-                    <img loading="lazy" class="header__navegacion--logoimg" src="./img/logo.png" alt="argenta ecologica logo">
+                    <img loading="lazy" class="header__navegacion--logoimg" src="./img/logo.png"
+                        alt="argenta ecologica logo">
                 </button>
             </a>
             <button id="btn-menu" class="header__navegacion--btn-menu">
@@ -26,20 +36,20 @@
             </button>
             <ul class="header__navegacion--menu">
                 <button id="btn-link-1">
-                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu"
-                            href="#">Link 1</a></li>
+                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu" href="#">Link
+                            1</a></li>
                 </button>
                 <button id="btn-link-2">
-                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu"
-                            href="#">Link 2</a></li>
+                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu" href="#">Link
+                            2</a></li>
                 </button>
                 <button id="btn-link-3">
-                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu"
-                            href="#">Link 3</a></li>
+                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu" href="#">Link
+                            3</a></li>
                 </button>
                 <button id="btn-link-4">
-                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu"
-                            href="#">Link 4</a></li>
+                    <li class="header__navegacion--item-menu"><a class="header__navegacion--link-menu" href="#">Link
+                            4</a></li>
                 </button>
             </ul>
         </nav>
@@ -49,11 +59,27 @@
 
     </main>
 
-    <footer>
-        
+    <footer class="pie">
+        <h4 class="pie__redes-titulo">Nuestras Redes:</h4>
+        <div class="pie__socialbox">
+            <a href="https://www.instagram.com/martyfriedman/" target="_blank"><i
+                    class="fab fa-instagram pie__socialbox--social-icon "></i></a>
+            <a href="https://www.facebook.com/martyfriedman.official" target="_blank"><i
+                    class="fab fa-facebook-square pie__socialbox--social-icon"></i></a>
+            <a href="https://open.spotify.com/artist/5czW6bitDSKbNBNDizRT9p" target="_blank"><i
+                    class="fab fa-whatsapp pie__socialbox--social-icon "></i></a>
+        </div>
+        <h4 class="pie__redes-titulo">Contacto:</h4>
+        <div class="pie__parrafo">
+            <p class="pie__parrafo--texto">Website designed & devoloped by <a class="pie__parrafo--link" target="_blank"
+                    href="https://www.linkedin.com/in/juan-manuel-gonz%C3%A1lez-041576218/"><strong>Juan Manuel
+                        González</strong></a></p>
+            <p class="pie__parrafo--texto">&copy; Copyright 2021 Marty Friedman</p>
+        </div>
     </footer>
 
     <script src="./scripts/menu.js"></script>
     <script src="scripts/app.js"></script>
 </body>
+
 </html>
