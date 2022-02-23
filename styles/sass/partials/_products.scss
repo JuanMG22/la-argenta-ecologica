@@ -77,6 +77,10 @@
         position: absolute;
         inset: 0;
         background: darkseagreen;
+
+        @include laptop{
+            padding: 0;
+        }
     }
 
     &__products{
