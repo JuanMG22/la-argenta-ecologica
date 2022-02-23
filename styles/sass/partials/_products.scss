@@ -5,7 +5,6 @@
     display: flex;
     flex-flow: row wrap;
     margin: auto;
-    position: relative;
     margin-top: 4rem; /* temporal, para dejar lugar al nav */
 
     &__button{
@@ -21,7 +20,7 @@
         color: rgb(30, 30, 30);
         background: salmon;
 
-        &:hover{
+        &:hover, &:focus{
             color: darkslategrey;
         }
     }
@@ -62,40 +61,49 @@
             width: 100%;
             border: none;
             padding: 4rem;
+            padding-bottom: 0;
         }
     }
 
     &__productsContainer{
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: center;
         align-items: center;
         transform: translateX(-150vw);
         transition: transform 400ms;
-        padding-left: 4rem;
-        padding-right: 4rem;
-        position: absolute;
-        inset: 0;
+        position: fixed;
+        inset: 10%;
         background: darkseagreen;
+        border: 4px solid darkslategrey;
+        border-radius: .4em;
+        overflow-x: hidden;
+        overflow-y: scroll;
 
         @include laptop{
             padding: 0;
         }
+
+        & > button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+            border-radius: 0 0 0 .4em;
+        }
     }
 
     &__products{
-        width: 100%;
-        display: flex;
-        flex-flow: row nowrap;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: 1fr;
         justify-content: center;
+        align-content: center;
+        justify-items: center;
         align-items: center;
-        column-gap: 8rem;
-        row-gap: 4rem;
-        margin-bottom: 4rem;
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        padding-left: 2rem;
-        padding-left: 2rem;
+        gap: 4rem;
+        margin: 4rem;
 
         &__producto{
             aspect-ratio: 3 / 5;
@@ -107,8 +115,6 @@
             background: salmon;
             overflow: hidden;
             cursor: pointer;
-            position: relative;
-            scroll-snap-align: center;
 
             h3{
                 padding: .4rem;
@@ -129,7 +135,7 @@
                 border-radius: .4em .4em 0 0;
             }
             
-            &:hover img{
+            &:hover img, &:focus img{
                 transform: scale(1.3);
             }
 
@@ -185,7 +191,7 @@
                 }
     
     
-                &:hover img{
+                &:hover img, &:focus img{
                     transform: scale(1.3);
                 }
             }

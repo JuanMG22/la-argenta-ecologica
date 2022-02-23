@@ -104,3 +104,28 @@ a {
     text-decoration: none;
     color: $blanco;
 }
+
+/* INICIO SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    background: darkseagreen;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, darkslategrey, salmon);
+    border-radius: 10px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, darkslategrey, salmon);
+}
+
+/* FIN SCROLLBAR */
