@@ -70,7 +70,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        transform: translateX(-100vw);
+        transform: translateX(-150vw);
         transition: transform 400ms;
         padding-left: 4rem;
         padding-right: 4rem;
@@ -88,6 +88,10 @@
         column-gap: 8rem;
         row-gap: 4rem;
         margin-bottom: 4rem;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        padding-left: 2rem;
+        padding-left: 2rem;
 
         &__producto{
             aspect-ratio: 3 / 5;
@@ -100,6 +104,7 @@
             overflow: hidden;
             cursor: pointer;
             position: relative;
+            scroll-snap-align: center;
 
             h3{
                 padding: .4rem;
