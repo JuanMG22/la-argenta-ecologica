@@ -1,6 +1,5 @@
 .products{
     width: 100%;
-    max-width: 1800px;
     min-height: calc(100vh - 4rem);
     display: flex;
     flex-flow: row wrap;
@@ -45,7 +44,8 @@
                 font-weight: 700;
                 color: rgb(30, 30, 30);
                 text-align: center;
-                line-height: 1.2;
+                line-height: 1.1;
+                margin-bottom: .8rem;
             }
     
             p{
@@ -53,6 +53,10 @@
                 font-weight: 400;
                 color: darkslategrey;
                 text-align: center;
+            }
+
+            @include laptop{
+                max-width: 100ch;
             }
         } 
 
@@ -78,6 +82,7 @@
         border-radius: .4em;
         overflow-x: hidden;
         overflow-y: scroll;
+        z-index: 1;
 
         @include laptop{
             padding: 0;
@@ -89,6 +94,7 @@
             right: 0;
             margin: 0;
             border-radius: 0 0 0 .4em;
+            padding: .2rem;
         }
     }
 
