@@ -11,11 +11,17 @@
 }
 
 :root{
+/*  colores originales,   
     --color-one: #203C38;
-    --color-one-light: #386861;
-    --color-two: #aafcb8;  
-    --color-three: #81ce8e;/* background section about */
-    --color-four: #F5F5F5;
+    --color-two: #78E933;  
+    --color-three: #C6D982;
+    --color-four: #F5F5F5; */
+
+    --color-one: #203C38; /* titulos */
+    --color-one-light: #386861; /* textos */
+    --color-two: #aafcb8;  /* acento */
+    --color-three: #81ce8e; /* background 1 */
+    --color-four: #F5F5F5; /* background 2 */
 }
 
 html {
@@ -23,6 +29,7 @@ html {
     overflow-y: scroll;
     scroll-behavior: smooth;
     font-size: 100%;
+    scroll-padding-top: 4rem;
 }
 
 @font-face {
