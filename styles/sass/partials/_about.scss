@@ -1,5 +1,5 @@
 .about{
-    background: darkseagreen;
+    background: var(--color-three);
     width: 100%;
     min-height: calc(100vh - 4rem);
     margin: auto;
@@ -7,18 +7,19 @@
     flex-flow: row wrap;
 
     h2{
-        font-size: 3.4rem;
+        font-size: 4.4rem;
         font-weight: 700;
-        color: rgb(30, 30, 30);
+        font-family: madeTommy__bold;
+        color: var(--color-one);
         text-align: center;
-        line-height: 1.1;
+        line-height: 1.1;   
         margin-bottom: .8rem;
     }
 
     p{
-        color: darkslategrey;
+        color: var(--color-one-light);
         font-weight: 400;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         max-width: 80ch;
     }
 

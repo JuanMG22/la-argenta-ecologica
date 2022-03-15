@@ -2,8 +2,8 @@
 @import "./responsive";
 
 .header {
-    background: $blanco;
-    box-shadow: $sombra-amarilla;
+    background: var(--color-one);
+    box-shadow: 0 0 8px 0 var(--color-one-light);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@
                 overflow: hidden;
                 position: fixed;
                 font-size: 160%;
-                background: linear-gradient(rgba(46, 51, 209, 1), rgba(46, 51, 209, 0.876));
+                background: linear-gradient(var(--color-one), var(--color-one-light));
                 background-size: cover;
                 background-position: center;
                 top: 4.7rem;
@@ -68,7 +68,8 @@
 
         &--menu-mobile {
             @include tablet {
-                height: calc(100vh - 4.15rem);
+                top: 4rem;
+                height: calc(100vh - 4rem);
             }
         }
 
@@ -79,12 +80,12 @@
             background: none;
             border: none;
             outline: none;
-            cursor: pointer;
             margin-right: 2.2rem;
             height: 1.875rem;
             width: 30px;
             position: relative;
             transition: all ease .3s;
+            cursor: pointer;
 
             @include tablet {
                 display: block;
@@ -118,12 +119,11 @@
         &--lineas {
             position: absolute;
             content: "";
-            background: $negro-texto;
+            background: var(--color-four);
             width: 30px;
-            height: 3px;
+            height: 4px;
             border-radius: $borde-redondeado;
             transition: all ease .3s;
-            box-shadow: 1px 1px 0 darken($amarillo, 20%);
         }
 
         &--linea-1 {
@@ -158,34 +158,36 @@
         &--link-menu {
             display: block;
             padding: 0.4rem 0.8rem;
-            color: $negro-texto;
+            color: var(--color-four);
             font-size: 140%;
             letter-spacing: 1px;
             transition: ease all .3s;
             border-radius: .2em;
-            box-shadow: 1px 1px 0 0 darken($amarillo, 20%), 4px 4px 0 0 $amarillo;
+            box-shadow: 1px 1px 0 0 var(--color-two), 4px 4px 0 0 var(--color-two);
 
             @include laptop {
                 padding: 0.4rem 0.4rem;
+                font-size: 160%;
             }
 
             @include tablet {
+                font-size: 200%;
                 margin: 0.625rem 0rem;
                 background: none;
                 color: $blanco;
-                box-shadow: 1px 1px darken($azul, 10%), 5px 5px 0 0 $azul;
+                box-shadow: 1px 1px var(--color-two), 5px 5px 0 0 var(--color-two);
                 
             }
 
             &:hover {
+                color: var(--color-two);
                 transform: translate(2px, 2px);
-                box-shadow: 1px 1px 0 0 darken($amarillo, 20%), 3px 3px 0 0 $amarillo;
+                box-shadow: 1px 1px 0 0 var(--color-two), 3px 3px 0 0 var(--color-two);
 
                 @include tablet {
                     /* transform: none; */
-                    background: lighten($azul, 5%);
 
-                    box-shadow: 1px 1px darken($azul, 10%), 3px 3px 0 0 $azul;
+                    box-shadow: 1px 1px var(--color-two), 3px 3px 0 0 var(--color-two);
                 }
             }
         }
