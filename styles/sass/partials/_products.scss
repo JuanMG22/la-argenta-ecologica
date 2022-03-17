@@ -54,7 +54,7 @@
                 font-family: madeTommy__thin;
                 font-size: clamp(1rem, .5rem + 4vw, 1.8rem);
                 color: var(--color-one-light);
-                text-align: center;
+                text-align: left;
             }
 
             @include laptop{
