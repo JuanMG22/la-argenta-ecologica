@@ -13,7 +13,7 @@
 
     h2{
         font-size: clamp(2rem, 1rem + 8vw, 4.8rem);
-        font-family: madeTommy__bold;
+        font-family: "madeTommy__bold";
         color: var(--color-four);
         text-align: center;
         line-height: 1.1;   
@@ -23,7 +23,7 @@
 
     p{
         color: var(--color-four);
-        font-family: madeTommy__thin;
+        font-family: "madeTommy__thin";
         font-size: clamp(1rem, .5rem + 4vw, 1.8rem);
         max-width: 80ch;
         text-align: left;
