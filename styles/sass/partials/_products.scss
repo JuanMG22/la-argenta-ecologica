@@ -128,6 +128,10 @@
             position: relative;
             box-shadow: 0 0 .6em 0 var(--color-three);
             box-sizing: content-box;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
 
             &__title{
                 position: absolute;
@@ -157,7 +161,7 @@
                 color: var(--color-four);
                 font-weight: 400;
                 font-family: "madeTommy__thin";
-                text-align: center;
+                text-align: left;
                 font-size: 1rem;
                 line-height: 1.2;
             }
@@ -197,6 +201,22 @@
                 justify-content: start;
                 align-items: center;
                 background: linear-gradient(135deg, rgba(30, 30, 30, .7) 80%, rgba(129, 206, 142, .7) 80%);
+            }
+
+            &__expand{
+                align-self: start;
+                font-size: 1.2rem;
+                font-family: "madeTommy__bold";
+                padding: .4em;
+                border-radius: .2em;
+                color: var(--color-three);
+                text-shadow: 2px 2px 0 var(--color-one);
+                margin-top: 4%;
+                margin-left: 2%;
+
+                &:hover{
+                    background: rgba(0, 0, 0, .4);
+                }
             }
         }
     }

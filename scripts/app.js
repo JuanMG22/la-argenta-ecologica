@@ -153,8 +153,9 @@ function productModal(){
         let img = product.querySelector("img");
         modalImg.src = img.src; 
         
+        let expandButton = product.querySelector(".products__products__producto__expand")
         
-        product.addEventListener("click", ()=>{
+        expandButton.addEventListener("click", ()=>{
             openModal(modalImg)
         })
     })
