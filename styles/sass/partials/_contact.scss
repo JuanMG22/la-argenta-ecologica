@@ -1,4 +1,4 @@
-.about{
+.contact{
     background: var(--color-three);
     width: 100%;
     min-height: calc(100vh - 4rem);
@@ -74,5 +74,24 @@
 
     @include laptop{
         flex-flow: column wrap;
+    }
+
+    &__redes{
+        font-size: 4rem;
+        color: var(--color-four);
+        text-shadow: 4px 4px 0 var(--color-one);
+        align-self: center;
+        margin-top: 10%;
+        display: flex;
+        flex-flow: row wrap;
+        gap: clamp(1rem, 1rem + 2vw, 4rem);
+        cursor: pointer;
+
+        i{
+            &:hover{
+                color: var(--color-one);
+                text-shadow: 4px 4px 0 var(--color-four);
+            }
+        }
     }
 }
