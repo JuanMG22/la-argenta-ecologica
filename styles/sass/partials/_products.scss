@@ -180,6 +180,10 @@
                 font-size: 1rem;
                 line-height: 1.2;
                 overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                    width: 6px;
+                }
             }
             
             img{
