@@ -21,6 +21,10 @@
         &:hover, &:focus{
             color: var(--color-one);
         }
+
+        @include mobile-s{
+            font-size: 1.2rem;
+        }
     }
 
     &__info{
@@ -29,6 +33,10 @@
         padding-left: 4rem;
         padding-right: 4rem;
         background: linear-gradient(135deg, var(--color-four) 72%, var(--color-one-light) 72%);
+
+        @include laptop{
+            background: linear-gradient(45deg, var(--color-four) 72%, var(--color-one-light) 72%);
+        }
 
         &__container{
             width: 100%;
@@ -39,6 +47,12 @@
             flex-flow: column wrap;
             justify-content: center;
             align-items: center;
+
+            button{
+                @include laptop{
+                    align-self: center;
+                }
+            }
 
             h2{
                 font-size: clamp(2rem, .8rem + 8vw, 4.4rem);
@@ -154,7 +168,7 @@
                 font-size: 2rem;
                 font-family: "madeTommy__bold";
                 line-height: 1.2;
-                margin-top: 20%;
+                margin-top: 10%;
             }
 
             p{
@@ -165,6 +179,7 @@
                 text-align: left;
                 font-size: 1rem;
                 line-height: 1.2;
+                overflow-y: scroll;
             }
             
             img{
@@ -214,6 +229,7 @@
                 text-shadow: 2px 2px 0 var(--color-one);
                 margin-top: 4%;
                 margin-left: 2%;
+                margin-bottom: 4%;
 
                 &:hover{
                     background: rgba(0, 0, 0, .4);
@@ -238,7 +254,7 @@
             align-content: center;
             gap: .8rem;
             grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-            grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+            grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
             padding-top: 4rem;
             padding-bottom: 4rem;
            
@@ -263,7 +279,7 @@
                 }
     
                 &:nth-of-type(4){
-                    grid-area: 4 / 1 / 5 / 6;
+                    grid-area: 4 / 1 / 6 / 6;
                 }
     
     

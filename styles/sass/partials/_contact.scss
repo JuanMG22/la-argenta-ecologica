@@ -77,7 +77,7 @@
     }
 
     &__redes{
-        font-size: 4rem;
+        font-size: clamp(3rem, 3rem + 3vw, 6rem);
         color: var(--color-four);
         text-shadow: 4px 4px 0 var(--color-one);
         align-self: center;
@@ -87,8 +87,8 @@
         gap: clamp(1rem, 1rem + 2vw, 4rem);
         cursor: pointer;
 
-        i{
-            &:hover{
+        a{
+            &:hover, &:focus{
                 color: var(--color-one);
                 text-shadow: 4px 4px 0 var(--color-four);
             }
