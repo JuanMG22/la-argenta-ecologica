@@ -18,27 +18,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.4rem 0rem;
-
-
-        @include tablet {
-            padding: 0.4rem 0.6rem 0rem 1.2rem;
-            width: 100vw;
-        }
+        margin-right: 1rem;
 
         &--logoimg {
-            height: 4rem;
-            @include laptop {
-                height: 2.3rem;
-            }
-
-            @include tablet {
-                display: block;
-                height: 3.2rem;
-                margin: 0.6rem 0.3rem 0.3rem 0.3rem;
-            }
+            height: 3.4rem;
+            margin-top: .24rem;
         }
-
 
         &--menu {
             z-index: 999;
@@ -98,6 +83,7 @@
             border: none;
             outline: none;
             cursor: pointer;
+            margin-left: 1rem;
         }
 
         #btn-link-1 {
