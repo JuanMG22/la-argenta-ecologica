@@ -113,7 +113,7 @@ function productModal(){
 
                 setTimeout(() => {
                     productModalFlag = 0;
-                }, 1); 
+                }, 0); 
             }
         }
     }
@@ -124,7 +124,7 @@ function productModal(){
             
             setTimeout(() => {
                 productModalFlag = 0;
-            }, 1); 
+            }, 0); 
         }
     }
 
@@ -134,7 +134,7 @@ function productModal(){
             closeProducts();
             setTimeout(() => {
                 productModalFlag = 0;
-            }, 1); 
+            }, 0); 
         }
     }
 
