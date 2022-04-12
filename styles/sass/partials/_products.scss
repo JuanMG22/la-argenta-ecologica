@@ -14,12 +14,12 @@
         border: 2px solid var(--color-one);
         border-radius: .2em;
         font-weight: 700;
-        color: var(--color-one-light);
-        background: var(--color-two);
+        color: var(--color-four);
+        background: var(--color-one);
         font-family: "madeTommy__bold";
         
         &:hover, &:focus{
-            color: var(--color-one);
+            color: var(--color-two);
         }
 
         @include mobile-s{

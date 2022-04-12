@@ -151,7 +151,7 @@
             letter-spacing: 1px;
             transition: ease all .3s;
             border-radius: .2em;
-            box-shadow: 1px 1px 0 0 var(--color-two), 4px 4px 0 0 var(--color-two);
+            box-shadow: 2px 2px 0 0 var(--color-two);
 
             @include laptop {
                 padding: 0.4rem 0.4rem;
@@ -163,19 +163,19 @@
                 margin: 0.625rem 0rem;
                 background: none;
                 color: $blanco;
-                box-shadow: 1px 1px var(--color-two), 5px 5px 0 0 var(--color-two);
+                box-shadow: 4px 4px 0 0 var(--color-two);
                 
             }
 
             &:hover {
                 color: var(--color-two);
                 transform: translate(2px, 2px);
-                box-shadow: 1px 1px 0 0 var(--color-two), 3px 3px 0 0 var(--color-two);
+                box-shadow: 1px 1px 0 0 var(--color-two);
 
                 @include tablet {
                     /* transform: none; */
 
-                    box-shadow: 1px 1px var(--color-two), 3px 3px 0 0 var(--color-two);
+                    box-shadow: 2px 2px 0 0 var(--color-two);
                 }
             }
         }

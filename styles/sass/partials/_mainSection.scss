@@ -9,4 +9,12 @@ main{
 
 .home{
     min-height: 100vh;
+    a{
+        background: var(--color-one);
+        color: var(--color-four);
+
+        &:hover{
+            color: var(--color-two);
+        }
+    }
 }
