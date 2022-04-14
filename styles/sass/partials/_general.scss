@@ -10,11 +10,55 @@
     padding: 0;
 }
 
+:root{
+/*  colores originales,   
+    --color-one: #203C38;
+    --color-two: #78E933;  
+    --color-three: #C6D982;
+    --color-four: #F5F5F5; */
+
+    --color-one: #203C38; /* titulos */
+    --color-one-light: #386861; /* textos */
+    --color-two: #8deebf;  /* acento */
+    --color-three: #81ce8e; /* background 1 */
+    --color-four: #f5f5f5; /* background 2 */
+}
+
 html {
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
     font-size: 100%;
+    scroll-padding-top: 4rem;
+}
+
+@font-face {
+    font-family: madeTommy__black;
+    src: url('../../fonts/MADE\ TOMMY\ Black_PERSONAL\ USE.otf')
+}
+@font-face {
+    font-family: madeTommy__bold;
+    src: url('../../styles/fonts/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf');
+}
+@font-face {
+    font-family: madeTommy__extraBold;
+    src: url('../../styles/fonts/MADE\ TOMMY\ ExtraBold_PERSONAL\ USE.otf');
+}
+@font-face {
+    font-family: madeTommy__light;
+    src: url('../../styles/fonts/MADE\ TOMMY\ Light_PERSONAL\ USE.otf');
+}
+@font-face {
+    font-family: madeTommy__medium;
+    src: url('../../styles/fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf');
+}
+@font-face {
+    font-family: madeTommy__regular;
+    src: url('../../styles/fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf');
+}
+@font-face {
+    font-family: madeTommy__thin;
+    src: url('../../styles/fonts/MADE\ TOMMY\ Thin_PERSONAL\ USE.otf');
 }
 
 ul,
@@ -77,6 +121,7 @@ body {
     overflow-x: hidden;
     line-height: 1.5;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "madeTommy__regular";
 
     @include laptop-l {
         font-size: 14px;
@@ -104,3 +149,23 @@ a {
     text-decoration: none;
     color: $blanco;
 }
+
+/* INICIO SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+    background: var(--color-one);
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--color-one), var(--color-three), var(--color-one));
+}
+
+
+/* FIN SCROLLBAR */

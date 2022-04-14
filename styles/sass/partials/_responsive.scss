@@ -29,3 +29,9 @@
     }
 }
 
+@mixin mobile-s {
+    @media all and (max-width: 320px) {
+        @content;
+    }
+}
+
