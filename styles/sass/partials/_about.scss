@@ -45,6 +45,7 @@
         @include laptop{
             width: 100%;
             min-height: 0;
+            order: 1;
         }
     }
 
@@ -69,6 +70,7 @@
 
         @include laptop{
             width: 100%;
+            order: 0;
         }
     }
 

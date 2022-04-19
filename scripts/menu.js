@@ -32,6 +32,7 @@ const btnLogo = document.querySelector(`#btn-logo`);
 const btnLink1 = document.querySelector(`#btn-link-1`);
 const btnLink2 = document.querySelector(`#btn-link-2`);
 const btnLink3 = document.querySelector(`#btn-link-3`);
+const btnLink4 = document.querySelector(`#btn-link-4`);
 
 btnLogo.addEventListener(`mouseup`, () => {
     // Al detectar click del boton llamo funcion cierraMenu
@@ -47,6 +48,10 @@ btnLink2.addEventListener(`mouseup`, () => {
 });
 
 btnLink3.addEventListener(`mouseup`, () => {
+    cerrarMenu();
+});
+
+btnLink4.addEventListener(`mouseup`, () => {
     cerrarMenu();
 });
 
